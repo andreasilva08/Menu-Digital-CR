@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #B21E27;
+  --primary-dark: #8E161D;
+  --accent-color: #C62828;
+  --bg-light: #F8F9FA;
+  --surface-card: #FFFFFF;
+  --text-dark: #111111;
+  --text-muted: #555555;
+  --border-subtle: #EEEEEE;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Font styles matching Burger Bite branding */
+.font-display {
+  font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.text-primary-brand {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary-brand {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(135deg, #B21E27 0%, #8E161D 100%) !important;
+}
+
+/* Rounded Cards with subtle borders and gentle shadows */
+.burger-card {
+  border-radius: 16px !important;
+  background: #FFFFFF !important;
+  border: 1px solid #ECECEC !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  overflow: hidden;
+}
+
+.burger-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(178, 30, 39, 0.12) !important;
+  border-color: #F0A5A9 !important;
+}
+
+/* Featured / Chef Recommendation card */
+.burger-card-featured {
+  border: 2px solid #B21E27 !important;
+  box-shadow: 0 8px 30px rgba(178, 30, 39, 0.16) !important;
+  position: relative;
+}
+
+/* Circular badges inspired by the reference image */
+.stamp-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px dashed #B21E27;
+  color: #B21E27;
+  text-align: center;
+  font-weight: 800;
+  line-height: 1.1;
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.stamp-badge-red {
+  background: #B21E27;
+  border: 2px dashed #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D32F2F;
+  border-radius: 4px;
+}

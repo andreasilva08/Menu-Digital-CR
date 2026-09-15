@@ -1,0 +1,6 @@
+{
+  "name": "Burger Bite - Menú Digital",
+  "description": "Menú digital interactivo para restaurante de comidas rápidas desarrollado con Vue 3, Quasar Framework y Vue Router.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
